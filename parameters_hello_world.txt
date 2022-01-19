@@ -1,0 +1,69 @@
+parameters
+______________
+
+This is the import file holding the parameters of the analysis. 
+Essential information needs to be filled in each time a new dataset is to be used.
+  
+        
+        - nice id       -> the nice value describing the priority of code compilation. Available options are integers
+                           between -19 and 19. 
+                           if -19  nice  0      is chosen high   priority is requested (quick and urgend jobs)
+                           if nice=0 or nice=n  is chosen normal priority is requested 
+                           if   0 < nice < 19   is chosen low    priority is requested (long and  non-urgend jobs)
+        
+        - core id       -> the amount of physical computational cores needed for code compilation. Available options are
+                           integers above 0 and below the total amount of physical cores in your machine/cluster.
+                           if   core = -1         is chosen all available cores will be used (default option)
+        
+        - main path     -> the directory holding the dataset
+                           e.g. /home/athanasiadis/Documents/
+        
+        - dataset name  -> the name of the file holding the data
+                           e.g. hello_world
+        
+        - model id      -> the type of ANN required. Available options are linear or non-linear.
+                          e.g. linear (default option)
+        
+        - learning rate -> the learning rate for the ANN.
+                          e.g. 0.001 (default option)
+        
+        - epochs #      -> the amount of training epochs for the ANN.
+                          e.g. 1000 (default option)
+        
+        - subsampling # -> the amount of subsamplings required.
+                          e.g. 100 (default option)
+                         
+                         
+        Permutation test parameters
+        
+        - shuffle id    -> the type of permutation test required. Available options are block or full
+                          block is a trial based shuffling of the labels
+                          full  is a pattern based shuffling of the labels
+        
+        - shuffle #     -> the amount of shuffles needed for the permutation test.
+                          e.g. 1000 (default option)
+        
+        
+        Adversarial classifier parameters
+        
+        - ring domain   -> the minimum and maximum radius values of the ring shaped domain including the closest neighboors
+                          in terms of percentage relative to the furthest neighboor
+                          e.g. [5,35] (default option)  
+        
+        - clustering id -> the minimum samples and radius of the DBSCAN clustering algorithm used
+                          e.g. [3,0.25] (default values)
+
+ 
+ 
+nice id        : n
+core id        : -1
+main path      : /home/athanasiadis/Documents/git_attack/markos/2022.01.18/data/
+dataset name   : hello_world 
+model id       : linear 
+learning rate  : 0.001
+epochs #       : 1000
+subsamplings # : 100
+shuffle id     : block
+shuffle #      : 1000
+ring domain    : [5,35]
+clustering id  : [3,0.25]
