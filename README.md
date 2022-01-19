@@ -67,7 +67,9 @@ The user can then initiallize the adversarial classifier using the following ter
 	python3 attack_play.py
 
 The results will be stored in the form of a python dictionary within the previously mentioned directory.
+Finally the user can initiallize the relevance test using the following terminal command:
 
+    python3 relevance_play.py
 
 
 

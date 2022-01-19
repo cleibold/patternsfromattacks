@@ -55,15 +55,16 @@ Essential information needs to be filled in each time a new dataset is to be use
 
  
  
-nice id        : n
-core id        : -1
-main path      : /home/athanasiadis/Documents/git_attack/markos/2022.01.18/data/
-dataset name   : hello_world 
-model id       : linear 
-learning rate  : 0.001
-epochs #       : 1000
-subsamplings # : 100
-shuffle id     : block
-shuffle #      : 1000
-ring domain    : [5,35]
-clustering id  : [3,0.25]
+nice id             : n
+core id             : -1
+main path           : /home/athanasiadis/Documents/git_attack/markos/2022.01.18/data/
+dataset name        : hello_world 
+model id            : linear 
+learning rate       : 0.001
+epochs #            : 1000
+subsamplings #      : 100
+shuffle id          : block
+shuffle #           : 1000
+ring domain         : [5,35]
+clustering id       : [3,0.25]
+conficence interval : [2.5,97.5]

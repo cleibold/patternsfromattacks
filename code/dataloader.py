@@ -114,3 +114,26 @@ def pv_loader(mainpath,dataname):
     pvalue = sig_res['permutation_results']['pvalue']  
 
     return pvalue
+
+def attack_loader(mainpath,dataname):
+
+    """
+    attack_loader
+    ______________________
+    
+    This is a function that loads the adversarial classifier results.
+    
+    Input:  
+            - the main path and the name of the dataset
+                           
+    Output: 
+            - a python dictionary holding the adversarial classifier results
+            
+    """
+   
+    loadpath = mainpath + '/{}_results/data_info/'.format(dataname) + 'attack_results'    
+    # Load the python dictionary holding the dataset/information
+    with open(loadpath, 'rb') as f:
+        att_res = pickle.load(f)
+
+    return att_res

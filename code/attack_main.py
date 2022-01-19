@@ -91,7 +91,7 @@ def clf(att_res):
         att_res['weights'] = weights
     
     # Save 
-    att_res_name =  attackinfo   +'attack_results'           
+    att_res_name =  attackinfo   +'analysis_results'           
     with open(att_res_name,'wb') as f:
         pickle.dump(att_res, f)
 
@@ -123,7 +123,7 @@ def clf(att_res):
             att_res[subsampling_key]['usefull_indices']       = usefull_indices
     
     # Save 
-    att_res_name =  attackinfo   +'attack_results'           
+    att_res_name =  attackinfo   +'analysis_results'           
     with open(att_res_name,'wb') as f:
         pickle.dump(att_res, f)   
 
@@ -145,7 +145,7 @@ def clf(att_res):
     att_res['amount']                 = amount
     
     # Save 
-    att_res_name =  attackinfo   +'attack_results'           
+    att_res_name =  attackinfo   +'analysis_results'           
     with open(att_res_name,'wb') as f:
         pickle.dump(att_res, f)  
 
@@ -158,7 +158,7 @@ def clf(att_res):
     att_res['projections'] = projections
 
     # Save 
-    att_res_name =  attackinfo   +'attack_results'           
+    att_res_name =  attackinfo   +'analysis_results'           
     with open(att_res_name,'wb') as f:
         pickle.dump(att_res, f) 
 
