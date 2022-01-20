@@ -13,11 +13,11 @@ The decoder is binary, meaning that only two classes of data can be classified a
 
 The main requirement for the installation of the Adversarial Classifier is Anaconda 
 (v.4.10.1 or later). After installing the prefered Anaconda version, the user should
-download the Anaconda environment provided within this repository (**advenv.yml**).
+download the Anaconda environment provided within this repository (**adversarial.yml**).
 All required packages are included within this environment. 
 The user can create a new enviromnet using this file using the following terminal command:
 	
-	conda env create -f advenv.yml
+	conda env create -f adversarial.yml
 
 The user can then activate the environment using the following terminal command:
 
