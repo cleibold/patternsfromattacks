@@ -21,7 +21,7 @@ The user can create a new enviromnet using this file using the following termina
 
 The user can then activate the environment using the following terminal command:
 
-	conda activate advenv
+	conda activate adversarial
 
 The adversarial classifier should always be used within this environment. 
 The code is writen using Python v.3.8.8.
