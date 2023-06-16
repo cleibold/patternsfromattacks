@@ -131,7 +131,7 @@ def attack_loader(mainpath,dataname):
             
     """
    
-    loadpath = mainpath + '/{}_results/data_info/'.format(dataname) + 'attack_results'    
+    loadpath = mainpath + '/{}_results/data_info/'.format(dataname) + 'analysis_results'    
     # Load the python dictionary holding the dataset/information
     with open(loadpath, 'rb') as f:
         att_res = pickle.load(f)
