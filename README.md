@@ -38,7 +38,7 @@ The user should provide the dataset to be analysed in a similar format to the
 provided example (hello_world). Specifically, a python dictionary is needed with two entries.
 The dictionary keys for the two entries should be **data** and **labels** respectivally.
 Each of the above entries will hold a list. The **data** list is composed of several 
-Numpy arrays,one per trial. Each array should be a matriz of size (N,D) with N the amount of 
+Numpy arrays,one per trial. Each array should be a matrix of size (N,D) with N the amount of 
 patterns and D the dimensionality of the trial. The **labels** list is composed of integers
 , one per trial. Since the adversarial classifier is binary, two types of trials can only be
 analysed at once and consequently only two unique integer labels should be found within the 
